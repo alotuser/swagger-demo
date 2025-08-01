@@ -36,12 +36,12 @@ public class SwaggerConfig {
 		
 		String title = messageSource.getMessage("swagger.title", null, locale);
 		String description = messageSource.getMessage("swagger.description", null, locale);
-		String app=messageSource.getMessage("tag.app", null, locale);
+//		String app=messageSource.getMessage("tag.app", null, locale);
 		
 		
 		
 		return new Docket(DocumentationType.SWAGGER_2).apiInfo(new ApiInfoBuilder().title(title).description(description).build())
-				.tags(new Tag("app", app))
+//				.tags(new Tag("app", app))
 				.select()
 				.apis(RequestHandlerSelectors.basePackage("cn.alotus.swaggerdemo"))
 				.paths(PathSelectors.any())

@@ -18,7 +18,7 @@ import io.swagger.annotations.ApiParam;
 
 
 
-@Api(tags = {"app"})
+@Api(tags = {"TagApp"},value = "#{tag.app}AppController")
 @SpringBootApplication
 @RestController
 public class App {
